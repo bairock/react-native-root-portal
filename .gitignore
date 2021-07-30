@@ -42,4 +42,3 @@ yarn.lock
 Examples/ios/.DS_Store
 
 package-lock.json
-lib/
