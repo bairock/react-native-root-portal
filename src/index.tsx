@@ -35,7 +35,7 @@ export function enterPortal(
   callback?: () => void
 ): PortalManager {
   const manager = portalManagers.get(target);
-  const id = createPortalId(++portalUuid);
+  const id = createPortalId(0);
 
   if (manager) {
     manager.update(id, guest, callback);
