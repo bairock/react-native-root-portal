@@ -4,7 +4,7 @@ export interface PortalManager {
     update: (updater: React.ReactNode, updateCallback?: (() => void) | undefined) => void;
     destroy: (destroyCallback?: () => void) => void;
 }
-export declare function enterPortal(target: string, guest: ReactNode, callback?: () => void): PortalManager;
+export declare function enterPortal(unique: string, target: string, guest: ReactNode, callback?: () => void): PortalManager;
 export declare function PortalEntry(props: {
     children: ReactNode;
     target?: string;
